@@ -1,0 +1,14 @@
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+Ind = 0
+
+while Ind < len(my_list):
+    if my_list[Ind] > 0:
+        print(my_list[Ind])
+    elif my_list[Ind] < 0:
+        break
+    else:
+        Ind = Ind + 1
+        continue
+    Ind = Ind + 1
+
+
