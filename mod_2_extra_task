@@ -1,0 +1,15 @@
+summ = list()
+pair = list()
+n = int(input('Число слева '))
+
+for i in range(1,21):
+    for j in range(1,21):
+        if (i + j) > n or i == j or i > j:
+            continue
+        if n % (i + j) == 0:
+            summ.append(i + j)
+            pair.append(i)
+            pair.append(j)
+
+all_pairs = ''.join(str(x) for x in pair)
+print(all_pairs)
